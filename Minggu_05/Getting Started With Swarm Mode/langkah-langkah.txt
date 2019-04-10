@@ -1,0 +1,14 @@
+Getting Started With Swarm Mode
+
+1. Initialise Swarm Mode
+2. ketikan perintah docker swarm --help ==>maka akan menginisialisasi Mode Swarm
+3. selanjutnya ketikan perintah docker swarm init==>yaitu  cara menambahkan lebih banyak node dan menggunakan kontainer di seluruh host ini.
+4. selanjutnta ketikan perintah token=$(docker -H 172.17.0.87:2345 swarm join-token -q worker) && echo $token pada terminal yaitu untuk bergabung dengan clauser dengan perintah docker swarm join 172.17.0.87:2377 --token $token, selanjutnya ketikan  perintah docker node ls yaitu untuk melihat host yang aktif
+5. selanjutanya ketikan perintah docker network create -d overlay skynet yaitu  akan membuat jaringan overlay baru yang disebut skynet.
+6.selanjutnya ketikan perintah docker service create --name http --network skynet --replicas 2 -p 80:80 katacoda/docker-http-server yaitu mendefinisikan nama layanan yang disebut http dan itu harus dilampirkan ke jaringan skynet yang baru dibuat.
+7.kemudiaan ketikan perintah docker ps ==>Ketika kontainer dimulai Anda akan melihatnya menggunakan perintah ps
+8.selanjutnya ketikan perintah curl docker==>permintaan HTTP ke port publik, itu akan diproses oleh dua kontainer
+9.selanjutnya ketukan perintah docker service ps http==>yaitu untuk melihat daftar semua tugas yang terkait dengan layanan di seluruh cluster
+10.selanjutnya ketukan perintah docker service inspect --pretty http yaitu untuk t melihat detail dan konfigurasi layanan
+11.selanjutnya ketukan perintah  docker node ps $(docker node ls -q | head -n1) ==>melakukan query pada masing-masing host
+12.docker service scale http=5==>Perintah di bawah ini akan meningkatkan skala layanan http kami untuk berjalan di lima kontainer.

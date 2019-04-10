@@ -1,0 +1,18 @@
+Docker - Orchestration using Docker Compose
+1. Defining First Container
+2. Defining First Container ==>Ketikan program web: build: .
+3. Defining Settings==>selanjutnya ketikan links:- redis dan   ports:
+    - "3000"
+    - "8000"
+4.Define Second Container==>selanjutnya ketikan ==>edis:
+  image: redis:alpine
+  volumes:
+    - /var/redis/data:/data
+5.Docker Up==>kemudian run pada terminal docker dengan perintah docker-compose up -d
+  maka akan muncul Successfully built  dan tagged
+6.Docker Management==>kemudian klik kan di terminal  docker-compose ps ,docker-compose logs yaitu menjalan web 
+  kemudian klikan perintah docker-compose
+7.Docker Scale ==>selanjutnya klikan perintah docker-compose scale web=3 maka web sedang berjalan 
+ untuk selanjutnya  ketikan perintah docker-compose scale web=1
+8.Docker Stop==>ketikan perintah docker-compose stop yaitu fungsi ya untuk menstop web yg berjalan dan untuk menghapus smua yang sudah kita bikin dengan perintah docker-compose rm pada terminal.
+
