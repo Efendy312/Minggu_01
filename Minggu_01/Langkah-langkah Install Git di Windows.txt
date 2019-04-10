@@ -3,11 +3,11 @@ Langkah-langkah Install Git di Windows
 1.klik 2x file instaler Git 
 2.Maka akan muncul infomasi lisensi Git, klik Next > untuk melanjutkan
 3.Selanjutnya menentukan lokasi instalasi. Biarkan saja apa adanya, kemudian klik Next 
-4.Selanjutnya pemilihan komoponen, biarkan saja seperti ini kemudian klik Next 
+4.Selanjutnya pemilihan komoponen, kemudian klik Next 
 5.Selanjutnya pemlilihan direktori start menu, klik Next 
 6.Selanjutnya pengaturan PATH Environment. Pilih yang tengah agar perintah git
  dapat di kenali di Command Prompt (CMD). Setelah itu klik Next 
-7.Selanjutnya konversi line ending. Biarkan saja seperti ini, kemudian klik Next 
+7.Selanjutnya konversi line ending, kemudian klik Next 
 8.Selanjutnya pemilihan emulator terminal. Pilih saja yang bawah, kemudian klik Next 
 9.Selanjutnya pemilihan opsi ekstra. Klik saja Next 
 10.Selanjutnya pemilihan opsi ekspreimental, langsung saja klik Install untuk memaulai instalasi.
