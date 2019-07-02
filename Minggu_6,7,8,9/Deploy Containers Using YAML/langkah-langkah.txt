@@ -1,0 +1,8 @@
+Deploy Containers Using YAML
+
+1. pertama tuliskan perintah 1 yaitu  mendefinisikan cara meluncurkan aplikasi yang disebut webapp1 menggunakan Docker Image katacoda / docker-http-server yang berjalan pada Port 80.
+2. tulisakan kubectl create -f deployment.yaml ==>Ini digunakan untuk gugus dengan perintah
+3.ketikan kubectl get deployment
+4.selanjutnya klik kubectl describe deployment webapp1
+5.step 2 yaitu yang mengontrol cara aplikasi berkomunikasi. Konfigurasi jaringan
+6.step ke 3 yaitu Rincian YAML dapat diubah karena konfigurasi yang berbeda diperlukan untuk penerapan. Ini mengikuti infrastruktur sebagai pola pikir kod

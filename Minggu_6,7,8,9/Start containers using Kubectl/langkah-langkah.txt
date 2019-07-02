@@ -1,0 +1,12 @@
+Start containers using Kubectl
+
+1. pertama jalan perinta Kubernetes cluster.minikube start
+2.selanjutnya tuliskan perintah kubectl get nodes
+3. Step 2 - Kubectl Run
+4.Step 3 - Kubectl Expose
+4.Gunakan perintah buntuk mengekspos port kontainer 80 pada host 8000 yang mengikat ip eksternal host. yaitu kubectl expose deployment http --external-ip="172.17.0.26" --port=8000 --target-port=80
+5.tuliskan perintah curl http://172.17.0.26:8000 ==>kemudian dapat melakukan ping host dan melihat hasilnya dari layanan HTTP
+6.Step 4 - Kubectl Run and Expose yaitu Dengan menjalankan kubectl dimungkinkan untuk membuat penyebaran dan mengeksposnya sebagai satu perintah
+7.ketikan perintah kubectl run httpexposed --image=katacoda/docker-http-server:latest --replicas=1 --port=80 --hostport=8001 yaitu Gunakan perintah perintah untuk membuat layanan http kedua yang terbuka di port 8001.
+8.Step 5 - Scale Containers
+9.ketikan perintah kubectl scale --replicas=3 deployment http 
